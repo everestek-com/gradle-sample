@@ -13,7 +13,7 @@ plugins {
 }
 
 version = '1.0-SNAPSHOT' 
-group = 'com.balu'
+group = 'com.rt'
 
 def publishName = 'gradle-jacoco'
 sonarqube {
@@ -21,7 +21,7 @@ sonarqube {
         property 'sonar.projectName', 'Gradle-Jacoco-Coverage'
 		property 'sonar.host.url', 'http://localhost:9000'
         property 'sonar.login', 'b5e1e1bd0fe08929e91296f7777911a9de51e571'
-		//property 'sonar.login', 'balaji'
+		//property 'sonar.login', 'RushiTechnologies'
         //property 'sonar.password', 'password'
     }
 }
@@ -64,7 +64,7 @@ repositories {
 /*sonarqube {
     properties {
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "balaji"
+        property "sonar.login", "RushiTechnologies"
         property "sonar.password", "password"
     }
 }*/
