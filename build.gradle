@@ -61,13 +61,7 @@ repositories {
     mavenCentral()
 }
 
-/*sonarqube {
-    properties {
-        property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "RushiTechnologies"
-        property "sonar.password", "password"
-    }
-}*/
+
 dependencies {
     compile ("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
