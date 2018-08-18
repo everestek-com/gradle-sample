@@ -1,5 +1,50 @@
-# Gradle
-# ------
+#Maven Ignore
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+#Ant Ignore
+.el
+*.ipr
+*.iws
+*.pif
+.ant.properties
+.classpath
+.DS_Store
+.project
+.settings
+bin
+apache-ant-1.*
+bootstrap
+build
+dist
+distribution
+java-repository
+patch.tar.gz
+patch.txt
+target
+velocity.log*
+lib/optional/*.jar
+src/tests/antunit/core/output
+.idea
+*.iml
+/src/GPATH
+/src/GRTAGS
+/src/GSYMS
+/src/GTAGS
+/log.xml
+lib/optional/license.txt
+/release/distrib/
+
+
+# Gradle Ignore
+
 .gradle
 /build
 /buildSrc/build
@@ -84,4 +129,3 @@ atlassian-ide-plugin.xml
 /*.log
 
 # oh-my-zsh gradle plugin
-.gradletasknamecache
