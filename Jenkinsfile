@@ -7,7 +7,7 @@ node {
   echo "Jenkins Home ${env.JENKINS_HOME}"
   echo "Jenkins URL ${env.JENKINS_URL}"
   echo "JOB Name ${env.JOB_NAME}"
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5')), disableConcurrentBuilds(abortPrevious: true), pipelineTriggers([pollSCM('* * * * *')])])
+//properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5')), disableConcurrentBuilds(abortPrevious: true), pipelineTriggers([pollSCM('* * * * *')])])
     def gradlehome=tool name:'gradle6.3'
     stage('checkout'){
         git branch: 'dev', credentialsId: '67837e2a-d168-4f13-b8c5-5a427dd5f584', url: 'https://github.com/everestek-com/gradle-sample.git'
