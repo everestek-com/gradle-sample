@@ -12,10 +12,10 @@ node {
     stage('checkout'){
         git branch: 'dev', credentialsId: '67837e2a-d168-4f13-b8c5-5a427dd5f584', url: 'https://github.com/everestek-com/gradle-sample.git'
     }
-    stage('Compile'){
+  /*  stage('Compile'){
         sh "${gradlehome}/bin/gradle compileTestJava"
     }
-  /*  stage('Build'){
+    stage('Build'){
         sh "./gradlew cleanTest test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
     }*/
     stage('Tests'){
