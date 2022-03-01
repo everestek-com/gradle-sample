@@ -15,11 +15,11 @@ node {
     stage('Compile'){
         sh "${gradlehome}/bin/gradle compileTestJava"
     }
-    stage('Build'){
-        sh "${gradlehome}/bin/gradle build"
-    }
+  /*  stage('Build'){
+        sh "./gradlew cleanTest test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
+    }*/
     stage('Tests'){
-        sh "${gradlehome}/bin/gradle Test"
+        sh "./gradlew cleanTest test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
     }
     /*stage('SendEmailNotification'){
         mail bcc: '', body: '''Build Over
