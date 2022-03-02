@@ -10,7 +10,7 @@ node {
 //properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5')), disableConcurrentBuilds(abortPrevious: true), pipelineTriggers([pollSCM('* * * * *')])])
     def gradlehome=tool name:'gradle6.3'
     stage('checkout'){
-        git branch: 'dev', credentialsId: '67837e2a-d168-4f13-b8c5-5a427dd5f584', url: 'https://github.com/everestek-com/gradle-sample.git'
+        sh 'chmod 775 gradlew'
     }
   /*  stage('Compile'){
         sh "${gradlehome}/bin/gradle compileTestJava"
