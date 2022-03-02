@@ -19,7 +19,7 @@ node {
         sh "./gradlew cleanTest test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
     }*/
     stage('Tests'){
-        sh "./gradlew cleanTest test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
+        sh "./gradlew cleanTest"// test integrationTestClasses compileJSPs -s-i --refresh-dependencies"
     }
     /*stage('SendEmailNotification'){
         mail bcc: '', body: '''Build Over
